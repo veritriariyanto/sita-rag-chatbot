@@ -1,0 +1,182 @@
+[
+  {
+    "id": "mhs_001",
+    "role": "mahasiswa",
+    "category": "login",
+    "question": "Bagaimana cara login sebagai mahasiswa?",
+    "answer": "Untuk login sebagai mahasiswa: 1) Pada halaman login pilih opsi 'Mahasiswa', 2) Masukkan email dan password dengan benar, 3) Klik tombol 'Login' untuk masuk ke sistem.",
+    "related_sections": ["login", "akses sistem"],
+    "keywords": ["login", "mahasiswa", "email", "password", "masuk sistem", "halaman login", "cara login"]
+  },
+  {
+    "id": "mhs_002",
+    "role": "mahasiswa",
+    "category": "login",
+    "question": "Apa yang harus dilakukan jika menu Tugas Akhir tidak muncul setelah login?",
+    "answer": "Jika setelah login menu Tugas Akhir tidak muncul, maka akun tersebut tidak memiliki akses ke Sistem Informasi Tugas Akhir. Silakan menghubungi admin untuk meminta akses ke Sistem Informasi Tugas Akhir.",
+    "related_sections": ["login", "hak akses"],
+    "keywords": ["tidak ada akses", "menu tidak muncul", "hubungi admin", "minta akses", "tidak bisa akses", "akses tugas akhir"]
+  },
+  {
+    "id": "mhs_003",
+    "role": "mahasiswa",
+    "category": "dashboard",
+    "question": "Apa saja yang ditampilkan di Dashboard mahasiswa?",
+    "answer": "Dashboard mahasiswa menampilkan: 1) Flow Tugas Akhir - tahapan proses yang harus dilakukan, 2) Card Informasi - status bimbingan dan jadwal ujian, 3) Progress Bimbingan - kemajuan dari BAB I sampai BAB V, 4) Jadwal Ujian TA - informasi jadwal ujian yang telah ditetapkan, 5) Total Bimbingan - jumlah bimbingan yang telah dilakukan dan diterima dosen.",
+    "related_sections": ["dashboard", "informasi"],
+    "keywords": ["dashboard", "halaman utama", "progress bimbingan", "jadwal ujian", "flow tugas akhir", "total bimbingan", "card informasi"]
+  },
+  {
+    "id": "mhs_004",
+    "role": "mahasiswa",
+    "category": "bimbingan",
+    "question": "Bagaimana cara request pembimbing?",
+    "answer": "Untuk request pembimbing: 1) Masuk ke halaman Bimbingan, 2) Pilih kategori tugas akhir (jika tidak tersedia hubungi admin), 3) Pilih dosen pembimbing yang aktif, 4) Klik tombol 'Kirim' untuk mengajukan. PENTING: Mahasiswa hanya memiliki satu kali kesempatan memilih pembimbing. Jika ditolak, admin yang akan melakukan plotting pembimbing.",
+    "related_sections": ["bimbingan", "pembimbing"],
+    "keywords": ["request pembimbing", "pilih pembimbing", "kategori tugas akhir", "dosen pembimbing", "ajukan pembimbing", "satu kali kesempatan"]
+  },
+  {
+    "id": "mhs_005",
+    "role": "mahasiswa",
+    "category": "bimbingan",
+    "question": "Apa arti status request pembimbing?",
+    "answer": "Status request pembimbing ada 2: 1) Menunggu - permintaan sedang dalam proses verifikasi oleh dosen yang diajukan, 2) Ditolak - permintaan ditolak oleh dosen, mahasiswa menunggu admin melakukan plotting pembimbing.",
+    "related_sections": ["bimbingan", "status"],
+    "keywords": ["status request", "menunggu", "ditolak", "verifikasi dosen", "plotting admin"]
+  },
+  {
+    "id": "mhs_006",
+    "role": "mahasiswa",
+    "category": "bimbingan",
+    "question": "Bagaimana cara melakukan bimbingan setelah dapat pembimbing?",
+    "answer": "Setelah dapat pembimbing, mahasiswa dapat menambah request bimbingan baru dengan klik tombol 'Tambah'. Sistem menampilkan Progress Bar untuk kemajuan BAB I-V (ditandai ceklis jika diterima dosen). Setiap bimbingan memiliki status: Menunggu (direview dosen), Ditolak (perlu revisi), atau Diterima (disetujui dosen).",
+    "related_sections": ["bimbingan", "proses"],
+    "keywords": ["proses bimbingan", "progress bar", "tambah bimbingan", "status bimbingan", "bab 1 sampai 5", "request bimbingan baru"]
+  },
+  {
+    "id": "mhs_007",
+    "role": "mahasiswa",
+    "category": "bimbingan",
+    "question": "Bagaimana cara melihat nilai bimbingan?",
+    "answer": "Setelah dosen memberikan nilai bimbingan, akan muncul button 'Lihat Nilai' di bawah tombol tambah. Klik button tersebut untuk melihat nilai bimbingan dan catatan dari dosen pembimbing.",
+    "related_sections": ["bimbingan", "nilai"],
+    "keywords": ["nilai bimbingan", "lihat nilai", "catatan dosen", "button lihat nilai", "cek nilai"]
+  },
+  {
+    "id": "mhs_008",
+    "role": "mahasiswa",
+    "category": "proposal",
+    "question": "Apa saja persyaratan untuk mengajukan proposal?",
+    "answer": "Persyaratan pengajuan proposal: 1) Mahasiswa sudah memiliki dosen pembimbing (jika belum, gunakan tombol 'Request Pembimbing'), 2) Form pengajuan proposal telah dibuka oleh admin (jika ditutup, tunggu admin membuka form).",
+    "related_sections": ["proposal", "persyaratan"],
+    "keywords": ["persyaratan proposal", "syarat pengajuan proposal", "dosen pembimbing", "form pengajuan", "cek persyaratan"]
+  },
+  {
+    "id": "mhs_009",
+    "role": "mahasiswa",
+    "category": "proposal",
+    "question": "Bagaimana cara upload proposal?",
+    "answer": "Langkah upload proposal: 1) Masukkan judul tugas akhir sesuai topik yang telah disetujui, 2) Unggah Naskah Proposal dalam format PDF, 3) Unggah Transkrip Nilai Terbaru dalam format PDF, 4) Klik tombol 'Kirim' untuk mengirimkan proposal kepada admin.",
+    "related_sections": ["proposal", "upload"],
+    "keywords": ["upload proposal", "unggah proposal", "naskah proposal", "transkrip nilai", "dokumen proposal", "format PDF", "kirim proposal"]
+  },
+  {
+    "id": "mhs_010",
+    "role": "mahasiswa",
+    "category": "proposal",
+    "question": "Apa arti status verifikasi proposal?",
+    "answer": "Status verifikasi proposal ada 3: 1) Menunggu - proposal dalam antrean menunggu diverifikasi admin, 2) Ditolak - ada alasan penolakan dan daftar berkas yang perlu diperbaiki, mahasiswa bisa upload ulang (status kembali ke menunggu), 3) Diterima - tombol 'Nilai' muncul di pojok kanan bawah, tapi tidak bisa diklik sampai admin input nilai.",
+    "related_sections": ["proposal", "verifikasi", "status"],
+    "keywords": ["verifikasi proposal", "status proposal", "proposal ditolak", "proposal diterima", "upload ulang", "alasan penolakan"]
+  },
+  {
+    "id": "mhs_011",
+    "role": "mahasiswa",
+    "category": "proposal",
+    "question": "Bagaimana cara melihat nilai proposal?",
+    "answer": "Setelah admin menginput nilai proposal, tombol 'Lihat Nilai' akan aktif. Klik tombol tersebut untuk melihat nilai proposal dan catatan dari dosen pembimbing atau penguji.",
+    "related_sections": ["proposal", "nilai"],
+    "keywords": ["nilai proposal", "lihat nilai proposal", "catatan penguji", "tombol lihat nilai aktif"]
+  },
+  {
+    "id": "mhs_012",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa saja persyaratan untuk mengajukan ujian tugas akhir?",
+    "answer": "Persyaratan ujian tugas akhir: 1) Jumlah bimbingan minimal 9 kali (jika belum, lanjutkan bimbingan), 2) Form pengajuan telah dibuka oleh admin (jika ditutup, tunggu admin membuka), 3) Dosen penguji sudah diplotting oleh admin (jika belum, tunggu admin melakukan plotting).",
+    "related_sections": ["ujian", "persyaratan"],
+    "keywords": ["persyaratan ujian", "syarat ujian", "minimal bimbingan", "9 kali", "dosen penguji", "plotting penguji", "form pengajuan ujian"]
+  },
+  {
+    "id": "mhs_013",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Dokumen apa saja yang harus diupload untuk ujian tugas akhir?",
+    "answer": "Dokumen yang harus diupload (semua format PDF): 1) Naskah Tugas Akhir, 2) Scan KRS Semester Terakhir, 3) Bukti Persetujuan Pembimbing, 4) Transkrip Nilai Mahasiswa, 5) Sertifikat Kompetensi, 6) Sertifikat TOEIC, 7) Berita Acara Seminar Hasil, 8) Surat Perpanjangan Masa Studi (WAJIB bagi mahasiswa yang studinya lebih dari 6 semester). Setelah lengkap, klik tombol 'Kirim'.",
+    "related_sections": ["ujian", "dokumen", "upload"],
+    "keywords": ["upload ujian", "unggah dokumen ujian", "naskah tugas akhir", "KRS", "persetujuan pembimbing", "sertifikat TOEIC", "berita acara seminar", "perpanjangan masa studi", "dokumen ujian"]
+  },
+  {
+    "id": "mhs_014",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa arti status verifikasi berkas ujian?",
+    "answer": "Status verifikasi berkas ujian ada 3: 1) Menunggu - berkas dalam antrean menunggu diverifikasi admin, 2) Ditolak - ada alasan penolakan dan daftar berkas yang perlu diperbaiki, mahasiswa bisa upload ulang sesuai masukan admin, 3) Diterima - tombol 'Berkas' muncul dan bisa diklik untuk melihat kembali berkas yang sudah diupload.",
+    "related_sections": ["ujian", "verifikasi", "status"],
+    "keywords": ["verifikasi berkas ujian", "status berkas", "berkas ditolak", "berkas diterima", "upload ulang berkas"]
+  },
+  {
+    "id": "mhs_015",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Bagaimana cara melihat jadwal ujian?",
+    "answer": "Setelah admin menetapkan jadwal ujian, tombol 'Daftar' berubah menjadi 'Detail'. Klik tombol 'Detail' untuk melihat informasi lengkap: tanggal ujian, waktu ujian, ruang ujian, dan nama dosen penguji.",
+    "related_sections": ["ujian", "jadwal"],
+    "keywords": ["jadwal ujian", "penjadwalan ujian", "tanggal ujian", "waktu ujian", "ruang ujian", "detail ujian", "dosen penguji"]
+  },
+  {
+    "id": "mhs_016",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Bagaimana cara melihat nilai ujian tugas akhir?",
+    "answer": "Setelah proses ujian selesai dan dosen penguji telah memberikan penilaian, tombol 'Lihat Nilai' akan aktif di halaman detail Tugas Akhir. Klik tombol tersebut untuk melihat nilai ujian, catatan dari dosen penguji, dan status kelulusan. Tombol tidak bisa diklik selama dosen penguji belum memberikan penilaian.",
+    "related_sections": ["ujian", "nilai"],
+    "keywords": ["nilai ujian", "lihat nilai", "status kelulusan", "catatan penguji", "hasil ujian"]
+  },
+  {
+    "id": "mhs_017",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa arti status kelulusan 'Lulus Tanpa Revisi'?",
+    "answer": "Status 'Lulus Tanpa Revisi' berarti mahasiswa dinyatakan lulus tanpa perlu melakukan revisi tambahan. Modal pop up ditampilkan tanpa catatan karena mahasiswa tidak perlu melakukan revisi apapun.",
+    "related_sections": ["ujian", "kelulusan"],
+    "keywords": ["lulus tanpa revisi", "status kelulusan", "lulus", "tidak ada revisi"]
+  },
+  {
+    "id": "mhs_018",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa arti status kelulusan 'Lulus dengan Revisi'?",
+    "answer": "Status 'Lulus dengan Revisi' berarti mahasiswa dinyatakan lulus tetapi harus melakukan beberapa revisi minor. Modal menampilkan status kelulusan 'Lulus Revisi', mahasiswa dapat melihat nilai dan catatan revisi yang diberikan oleh dosen.",
+    "related_sections": ["ujian", "kelulusan"],
+    "keywords": ["lulus dengan revisi", "lulus revisi", "status kelulusan", "revisi minor", "catatan revisi"]
+  },
+  {
+    "id": "mhs_019",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa yang harus dilakukan jika mendapat status 'Belum Lulus - Perlu Diuji Ulang'?",
+    "answer": "Status 'Belum Lulus - Perlu Diuji Ulang' berarti mahasiswa diminta memperbaiki naskah dan mengikuti ujian ulang. Modal berisi status ujian dan catatan (tidak menampilkan nilai karena harus ujian ulang). Mahasiswa harus: 1) Melakukan upload ulang naskah Tugas Akhir, 2) Menunggu konfirmasi dari admin, 3) Menunggu penjadwalan ulang ujian oleh admin.",
+    "related_sections": ["ujian", "kelulusan"],
+    "keywords": ["belum lulus", "ujian ulang", "diuji ulang", "upload ulang naskah", "perbaikan naskah", "status kelulusan"]
+  },
+  {
+    "id": "mhs_020",
+    "role": "mahasiswa",
+    "category": "ujian",
+    "question": "Apa arti status kelulusan 'Tidak Lulus'?",
+    "answer": "Status 'Tidak Lulus' berarti hasil ujian tidak memenuhi standar kelulusan yang ditetapkan oleh tim penguji. Mahasiswa diwajibkan mengulang proses Tugas Akhir dari awal. Mahasiswa bisa melihat history ujian TA sebelumnya pada halaman Ujian dengan klik button 'History', kemudian klik button 'Detail' untuk melihat detail ujian dan nilai ujian sebelumnya.",
+    "related_sections": ["ujian", "kelulusan"],
+    "keywords": ["tidak lulus", "status kelulusan", "gagal ujian", "mengulang tugas akhir", "history ujian", "dari awal"]
+  }
+]

@@ -1,0 +1,335 @@
+[
+  {
+    "id": "adm_001",
+    "role": "admin",
+    "category": "login",
+    "question": "Bagaimana cara login sebagai admin?",
+    "answer": "Untuk login sebagai admin: 1) Buka halaman utama sistem dan akses menu Login, 2) Masukkan email dan password dengan benar, 3) Klik tombol 'Login' untuk masuk ke sistem.",
+    "related_sections": ["login", "akses sistem"],
+    "keywords": ["login admin", "email admin", "password admin", "masuk sistem", "cara login"]
+  },
+  {
+    "id": "adm_002",
+    "role": "admin",
+    "category": "dashboard",
+    "question": "Apa saja yang ditampilkan di Dashboard admin?",
+    "answer": "Dashboard admin menampilkan 8 card: 1) Card Tugas Akhir Aktif - jumlah mahasiswa dalam proses TA, 2) Card Ujian Terjadwal - jumlah jadwal ujian, 3) Card Mahasiswa Aktif - jumlah mahasiswa yang memiliki akses, 4) Card Dosen Aktif - jumlah dosen yang dapat dipilih, 5) Card Validasi Berkas - perbandingan berkas yang sudah/belum divalidasi, 6) Card Validasi Berkas Seminar Proposal - 5 pendaftar seminar yang belum diverifikasi (shortcut ke halaman validasi), 7) Card Validasi Berkas Ujian TA - 5 pendaftar ujian yang belum diverifikasi (shortcut), 8) Card Statistik Kategori TA - grafik batang jumlah TA per kategori 3 tahun terakhir.",
+    "related_sections": ["dashboard", "statistik"],
+    "keywords": ["dashboard admin", "statistik", "validasi berkas", "mahasiswa aktif", "dosen aktif", "ujian terjadwal", "card", "grafik"]
+  },
+  {
+    "id": "adm_003",
+    "role": "admin",
+    "category": "bimbingan",
+    "question": "Apa fungsi tab Request Pembimbing di halaman Bimbingan admin?",
+    "answer": "Tab Request Pembimbing digunakan untuk mengelola alokasi dosen pembimbing kepada mahasiswa yang belum memiliki pembimbing. Fitur yang ada: 1) Notifikasi total mahasiswa yang belum punya dosen pembimbing, 2) Filter berdasarkan kategori TA dan tahun ajaran, 3) Search berdasarkan NIM atau nama, 4) Kolom Dosen pembimbing menampilkan 'Plot pembimbing' untuk mahasiswa yang belum punya, 5) Pagination untuk atur jumlah data per halaman.",
+    "related_sections": ["bimbingan", "request pembimbing"],
+    "keywords": ["tab request pembimbing", "alokasi dosen", "plotting pembimbing", "mahasiswa belum punya pembimbing", "filter", "search"]
+  },
+  {
+    "id": "adm_004",
+    "role": "admin",
+    "category": "bimbingan",
+    "question": "Bagaimana cara admin melakukan plotting pembimbing?",
+    "answer": "Untuk plotting pembimbing: 1) Klik baris data mahasiswa yang belum memiliki dosen pembimbing (kolom Dosen Pembimbing menampilkan teks 'Plot Pembimbing'), 2) Admin akan diarahkan ke halaman Plotting Pembimbing, 3) Pilih dosen Pembimbing dari dropdown daftar dosen aktif, 4) Klik tombol 'Simpan' untuk konfirmasi plotting.",
+    "related_sections": ["bimbingan", "plotting"],
+    "keywords": ["plotting pembimbing", "admin", "alokasi dosen", "pilih dosen", "simpan plotting"]
+  },
+  {
+    "id": "adm_005",
+    "role": "admin",
+    "category": "bimbingan",
+    "question": "Bagaimana cara admin update pembimbing yang sudah ada?",
+    "answer": "Untuk update pembimbing: 1) Klik baris mahasiswa yang sudah memiliki dosen Pembimbing, 2) Admin akan diarahkan ke halaman Plotting Pembimbing, 3) Pilih dosen Pembimbing baru dari dropdown daftar dosen aktif, 4) Klik tombol 'Update' untuk konfirmasi plotting.",
+    "related_sections": ["bimbingan", "update"],
+    "keywords": ["update pembimbing", "ganti pembimbing", "edit pembimbing", "ubah dosen pembimbing"]
+  },
+  {
+    "id": "adm_006",
+    "role": "admin",
+    "category": "bimbingan",
+    "question": "Apa fungsi tab Bimbingan di halaman Bimbingan admin?",
+    "answer": "Tab Bimbingan digunakan untuk memantau dan melihat riwayat bimbingan yang telah dilakukan mahasiswa dengan dosen pembimbingnya. Fitur yang ada: 1) Filter berdasarkan kategori TA dan tahun ajaran, 2) Search berdasarkan NIM atau nama, 3) Pagination, 4) Detail view yang menampilkan riwayat bimbingan, progres bimbingan, nilai bimbingan dari dosen (jika sudah diinput), dan catatan hasil bimbingan.",
+    "related_sections": ["bimbingan", "riwayat"],
+    "keywords": ["tab bimbingan", "riwayat bimbingan", "progres bimbingan", "detail bimbingan", "nilai bimbingan admin"]
+  },
+  {
+    "id": "adm_007",
+    "role": "admin",
+    "category": "proposal",
+    "question": "Apa fungsi tab Pengajuan di halaman Proposal?",
+    "answer": "Tab Pengajuan untuk mengelola pengajuan proposal dari mahasiswa. Fitur: 1) Notifikasi total mahasiswa yang berkasnya belum divalidasi, 2) Filter berdasarkan status validasi proposal dan tahun ajaran, 3) Pengaturan Akses proposal (tombol on/off) - ketika ON mahasiswa dapat upload proposal, jika OFF akses upload dinonaktifkan untuk semua mahasiswa, 4) Search berdasarkan NIM atau nama, 5) Pagination.",
+    "related_sections": ["proposal", "pengajuan"],
+    "keywords": ["pengajuan proposal", "validasi proposal", "akses proposal", "on off proposal", "filter proposal", "tab pengajuan"]
+  },
+  {
+    "id": "adm_008",
+    "role": "admin",
+    "category": "proposal",
+    "question": "Bagaimana cara admin validasi berkas proposal?",
+    "answer": "Untuk validasi berkas proposal: 1) Klik baris data mahasiswa yang status validasinya menunggu, 2) Admin diarahkan ke halaman validasi, 3) Lihat berkas yang diupload mahasiswa dengan klik nama berkas, 4) Terima/tolak berkas proposal dari mahasiswa, 5) Berikan catatan perbaikan berkas jika ditolak, 6) Lakukan konfirmasi validasi dengan menekan tombol validasi.",
+    "related_sections": ["proposal", "validasi"],
+    "keywords": ["validasi proposal", "verifikasi berkas proposal", "terima tolak proposal", "catatan perbaikan"]
+  },
+  {
+    "id": "adm_009",
+    "role": "admin",
+    "category": "proposal",
+    "question": "Apa fungsi tab Seminar di halaman Proposal?",
+    "answer": "Tab Seminar untuk mengelola penilaian proposal mahasiswa. Fitur: 1) Notifikasi total mahasiswa yang proposalnya belum dinilai, 2) Filter berdasarkan status dinilai/belum dinilai dan tahun ajaran, 3) Export data mahasiswa yang berkas proposalnya sudah valid ke format Excel (.xlsx), 4) Search berdasarkan NIM atau nama, 5) Pagination.",
+    "related_sections": ["proposal", "seminar"],
+    "keywords": ["seminar proposal", "penilaian proposal", "nilai proposal admin", "export data proposal", "excel proposal", "tab seminar"]
+  },
+  {
+    "id": "adm_010",
+    "role": "admin",
+    "category": "proposal",
+    "question": "Bagaimana cara admin memberi nilai proposal?",
+    "answer": "Untuk memberi nilai proposal: 1) Klik baris data mahasiswa yang nilainya belum dinilai, 2) Admin diarahkan ke halaman detail proposal, 3) Klik tombol 'Input Nilai' untuk membuka formulir penilaian, 4) Input nilai akhir proposal, 5) Menulis komentar atau saran terkait proposal, 6) Klik tombol 'Simpan' untuk menyimpan hasil penilaian.",
+    "related_sections": ["proposal", "penilaian"],
+    "keywords": ["nilai proposal", "input nilai proposal", "penilaian proposal", "komentar proposal"]
+  },
+  {
+    "id": "adm_011",
+    "role": "admin",
+    "category": "proposal",
+    "question": "Bagaimana cara admin mengedit nilai proposal yang sudah diberikan?",
+    "answer": "Untuk edit nilai proposal: 1) Klik baris data mahasiswa yang sudah dinilai, 2) Admin diarahkan ke halaman detail proposal, 3) Klik tombol 'Lihat Nilai' untuk membuka pop up nilai, 4) Di pop up nilai klik 'Edit Nilai', 5) Edit nilai akhir proposal dan komentar/saran, 6) Klik tombol 'Update' untuk memperbarui hasil penilaian.",
+    "related_sections": ["proposal", "edit"],
+    "keywords": ["edit nilai proposal", "ubah nilai proposal", "update nilai", "revisi nilai proposal"]
+  },
+  {
+    "id": "adm_012",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Apa fungsi tab Plotting Penguji di halaman Ujian?",
+    "answer": "Tab Plotting Penguji untuk mengelola penugasan dosen penguji untuk ujian TA. Fitur: 1) Notifikasi total mahasiswa yang belum diplotting, 2) Filter berdasarkan status menunggu/terploting dan tahun ajaran, 3) Search berdasarkan NIM atau nama, 4) Pagination.",
+    "related_sections": ["ujian", "plotting"],
+    "keywords": ["plotting penguji", "tab plotting", "dosen penguji", "penugasan penguji"]
+  },
+  {
+    "id": "adm_013",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin melakukan plotting dosen penguji?",
+    "answer": "Untuk plotting dosen penguji: 1) Klik baris data mahasiswa yang memiliki status menunggu, 2) Admin diarahkan ke halaman plot penguji, 3) Pilih dosen yang akan bertindak sebagai ketua penguji dari daftar dosen aktif, 4) Pilih dosen yang akan menjadi anggota penguji dari daftar dosen aktif, 5) Klik tombol 'Simpan' untuk konfirmasi form.",
+    "related_sections": ["ujian", "plotting"],
+    "keywords": ["plotting penguji", "ketua penguji", "anggota penguji", "dosen penguji", "simpan plotting"]
+  },
+  {
+    "id": "adm_014",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin mengedit dosen penguji yang sudah diplotting?",
+    "answer": "Untuk edit dosen penguji: 1) Klik baris data mahasiswa yang memiliki status terploting, 2) Muncul pop up dosen penguji dan ada button edit, tekan button edit, 3) Admin diarahkan ke halaman plot penguji, 4) Lakukan perubahan sesuai kebutuhan pada ketua penguji atau penguji, 5) Klik tombol 'Update' untuk memperbarui perubahan.",
+    "related_sections": ["ujian", "edit"],
+    "keywords": ["edit penguji", "ubah dosen penguji", "ganti penguji", "update penguji"]
+  },
+  {
+    "id": "adm_015",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Apa fungsi tab Pendaftar di halaman Ujian?",
+    "answer": "Tab Pendaftar untuk mengelola pendaftaran ujian TA mahasiswa. Fitur: 1) Notifikasi total mahasiswa yang berkasnya belum divalidasi, 2) Filter berdasarkan status validasi berkas dan tahun ajaran, 3) Search berdasarkan NIM atau nama, 4) Pengaturan Akses Pendaftar TA (tombol on/off) - ketika ON mahasiswa dapat upload berkas, jika OFF akses upload dinonaktifkan, 5) Pagination.",
+    "related_sections": ["ujian", "pendaftar"],
+    "keywords": ["pendaftar ujian", "tab pendaftar", "validasi berkas ujian", "akses pendaftar", "on off pendaftar"]
+  },
+  {
+    "id": "adm_016",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin validasi berkas ujian tugas akhir?",
+    "answer": "Untuk validasi berkas ujian: 1) Klik baris data mahasiswa yang status validasinya menunggu, 2) Admin diarahkan ke halaman validasi, 3) Lihat berkas yang diupload mahasiswa dengan klik nama berkas, 4) Terima/tolak berkas pendaftaran dari mahasiswa, 5) Berikan catatan perbaikan berkas jika ditolak, 6) Lakukan konfirmasi validasi dengan menekan tombol validasi.",
+    "related_sections": ["ujian", "validasi"],
+    "keywords": ["validasi berkas ujian", "verifikasi ujian", "terima tolak berkas", "catatan perbaikan"]
+  },
+  {
+    "id": "adm_017",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin melihat detail berkas yang sudah diverifikasi?",
+    "answer": "Untuk melihat detail berkas yang sudah diverifikasi: 1) Klik baris data mahasiswa yang status validasinya ditolak/diterima, 2) Muncul pop up detail berkas mahasiswa, 3) Di pop up bisa lihat berkas yang diupload mahasiswa dengan klik nama berkas, 4) Lihat status berkas ditolak/diterima, 5) Lihat catatan perbaikan berkas.",
+    "related_sections": ["ujian", "detail"],
+    "keywords": ["detail berkas", "lihat berkas", "status verifikasi", "pop up berkas"]
+  },
+  {
+    "id": "adm_018",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Apa fungsi tab Jadwal & Berita Acara di halaman Ujian?",
+    "answer": "Tab Jadwal & Berita Acara untuk mengelola jadwal ujian dan berita acara. Fitur: 1) Notifikasi total mahasiswa yang jadwalnya belum dibuat, 2) Filter berdasarkan status dan tahun ajaran, 3) Export data mahasiswa yang berkas pendaftarannya sudah valid ke format Excel (.xlsx), 4) Search berdasarkan NIM atau nama, 5) Pagination.",
+    "related_sections": ["ujian", "jadwal"],
+    "keywords": ["jadwal ujian admin", "berita acara", "tab jadwal", "export jadwal", "penjadwalan"]
+  },
+  {
+    "id": "adm_019",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin membuat jadwal ujian tugas akhir?",
+    "answer": "Untuk membuat jadwal ujian: 1) Klik baris data mahasiswa dengan status menunggu, 2) Admin diarahkan ke halaman penjadwalan, 3) Input tanggal ujian, 4) Input ruang ujian, 5) Input sesi ujian, 6) Lakukan konfirmasi dengan menekan tombol 'Simpan'.",
+    "related_sections": ["ujian", "jadwal"],
+    "keywords": ["jadwal ujian", "penjadwalan", "tanggal ujian", "ruang ujian", "sesi ujian", "buat jadwal"]
+  },
+  {
+    "id": "adm_020",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin mengedit jadwal ujian yang sudah dibuat?",
+    "answer": "Untuk edit jadwal ujian: 1) Klik baris data mahasiswa dengan status terploting, 2) Muncul popup detail jadwal ujian lalu tekan tombol 'Edit', 3) Admin diarahkan ke halaman penjadwalan, 4) Edit tanggal ujian, ruang ujian, dan sesi ujian, 5) Lakukan konfirmasi perubahan dengan menekan tombol 'Update'.",
+    "related_sections": ["ujian", "edit"],
+    "keywords": ["edit jadwal", "ubah jadwal ujian", "update jadwal", "ganti jadwal"]
+  },
+  {
+    "id": "adm_021",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin download berita acara ujian?",
+    "answer": "Untuk download berita acara: 1) Klik baris data mahasiswa dengan status Lulus/Lulus(Revisi)/Ulang(Revisi)/Tidak Lulus, 2) Muncul popup detail jadwal ujian, 3) Tekan tombol 'Berita Acara' untuk melakukan download berkas berita acara.",
+    "related_sections": ["ujian", "berita acara"],
+    "keywords": ["berita acara", "download berita acara", "unduh berita acara", "cetak berita acara"]
+  },
+  {
+    "id": "adm_022",
+    "role": "admin",
+    "category": "ujian",
+    "question": "Bagaimana cara admin download lembar revisi mahasiswa?",
+    "answer": "Untuk download lembar revisi: 1) Klik baris data mahasiswa dengan status Lulus(Revisi)/Ulang(Revisi), 2) Muncul popup detail jadwal ujian, 3) Tekan tombol 'Lembar Revisi' untuk melakukan download berkas lembar revisi.",
+    "related_sections": ["ujian", "lembar revisi"],
+    "keywords": ["lembar revisi", "download lembar revisi", "unduh lembar revisi", "revisi mahasiswa"]
+  },
+  {
+    "id": "adm_023",
+    "role": "admin",
+    "category": "tugas_akhir",
+    "question": "Bagaimana cara admin mengelola status tugas akhir mahasiswa?",
+    "answer": "Halaman Tugas Akhir memiliki fitur: 1) Filter untuk menyaring data TA berdasarkan status dan tahun ajaran, 2) Search untuk mencari mahasiswa berdasarkan NIM atau nama, 3) Pagination untuk mengatur jumlah data per halaman. Admin bisa aktifkan atau non-aktifkan status tugas akhir mahasiswa.",
+    "related_sections": ["tugas_akhir", "manajemen"],
+    "keywords": ["manajemen tugas akhir", "status tugas akhir", "filter status", "halaman tugas akhir"]
+  },
+  {
+    "id": "adm_024",
+    "role": "admin",
+    "category": "tugas_akhir",
+    "question": "Bagaimana cara admin mengaktifkan tugas akhir mahasiswa?",
+    "answer": "Untuk aktifkan tugas akhir: 1) Klik baris data tugas akhir dengan status non-aktif, 2) Muncul popup pesan aktifkan tugas akhir, 3) Tekan tombol 'Aktifkan'.",
+    "related_sections": ["tugas_akhir", "aktifkan"],
+    "keywords": ["aktifkan tugas akhir", "aktivasi tugas akhir", "enable tugas akhir"]
+  },
+  {
+    "id": "adm_025",
+    "role": "admin",
+    "category": "tugas_akhir",
+    "question": "Bagaimana cara admin menonaktifkan tugas akhir mahasiswa?",
+    "answer": "Untuk non-aktifkan tugas akhir: 1) Klik baris data mahasiswa dengan status aktif, 2) Muncul popup pesan nonaktifkan tugas akhir, 3) Tekan tombol 'Nonaktif'.",
+    "related_sections": ["tugas_akhir", "nonaktifkan"],
+    "keywords": ["nonaktifkan tugas akhir", "disable tugas akhir", "matikan tugas akhir"]
+  },
+  {
+    "id": "adm_026",
+    "role": "admin",
+    "category": "user",
+    "question": "Bagaimana cara admin mengelola user mahasiswa?",
+    "answer": "Tab Mahasiswa di halaman User memiliki fitur: 1) Filter untuk menyaring data user mahasiswa berdasarkan status dan tahun ajaran, 2) Search untuk mencari mahasiswa berdasarkan nama atau judul tugas akhir, 3) Pagination. Admin bisa aktifkan/nonaktifkan status mahasiswa dengan: 1) Klik baris data user mahasiswa/beberapa user, 2) Setelah memilih, muncul Action Bar, 3) Klik 'Aktifkan' atau 'Nonaktifkan'.",
+    "related_sections": ["user", "mahasiswa"],
+    "keywords": ["user mahasiswa", "tab mahasiswa", "aktifkan user mahasiswa", "nonaktifkan user mahasiswa", "action bar"]
+  },
+  {
+    "id": "adm_027",
+    "role": "admin",
+    "category": "user",
+    "question": "Bagaimana cara admin mengelola user dosen?",
+    "answer": "Tab Dosen di halaman User memiliki fitur: 1) Filter untuk menyaring data user dosen berdasarkan status dan tahun ajaran, 2) Search untuk mencari data user dosen berdasarkan nama atau NIK, 3) Pagination. Admin bisa aktifkan/nonaktifkan status dosen dengan: 1) Klik baris data user dosen/beberapa user, 2) Setelah memilih, muncul Action Bar, 3) Klik 'Aktifkan' atau 'Nonaktifkan'.",
+    "related_sections": ["user", "dosen"],
+    "keywords": ["user dosen", "tab dosen", "aktifkan user dosen", "nonaktifkan user dosen", "NIK dosen"]
+  },
+  {
+    "id": "adm_028",
+    "role": "admin",
+    "category": "user",
+    "question": "Bagaimana cara admin mengedit jabatan kaprodi?",
+    "answer": "Untuk edit jabatan kaprodi: 1) Klik card divisi tugas akhir, 2) Muncul modal untuk pilih dosen aktif yang dapat dipilih menjadi kaprodi, 3) Klik 'Simpan' untuk konfirmasi perubahan.",
+    "related_sections": ["user", "jabatan"],
+    "keywords": ["jabatan", "kaprodi", "edit jabatan", "ganti kaprodi", "divisi tugas akhir"]
+  },
+  {
+    "id": "adm_029",
+    "role": "admin",
+    "category": "user",
+    "question": "Bagaimana cara admin mengedit kepala dosen studi?",
+    "answer": "Untuk edit kepala dosen studi: 1) Klik card kepala dosen studi, 2) Muncul modal untuk pilih dosen aktif yang dapat dipilih menjadi kepala dosen studi, 3) Klik 'Simpan' untuk konfirmasi perubahan.",
+    "related_sections": ["user", "jabatan"],
+    "keywords": ["kepala dosen studi", "edit jabatan", "ganti kepala dosen", "jabatan dosen"]
+  },
+  {
+    "id": "adm_030",
+    "role": "admin",
+    "category": "ruang_sesi",
+    "question": "Bagaimana cara admin menambah ruang ujian?",
+    "answer": "Untuk tambah ruang ujian: 1) Masuk ke halaman Ruang & Sesi, pilih tab Ruang, 2) Klik tombol 'Tambah' yang akan menampilkan pop-up, 3) Isi nama ruang, 4) Klik tombol 'Tambah'.",
+    "related_sections": ["ruang_sesi", "ruang"],
+    "keywords": ["ruang ujian", "tab ruang", "tambah ruang", "nama ruang", "ruang baru"]
+  },
+  {
+    "id": "adm_031",
+    "role": "admin",
+    "category": "ruang_sesi",
+    "question": "Bagaimana cara admin mengedit ruang ujian?",
+    "answer": "Untuk edit ruang ujian: 1) Klik tombol icon edit yang akan menampilkan pop-up untuk mengedit nama ruang, 2) Ubah nama ruang, 3) Klik tombol 'Simpan'.",
+    "related_sections": ["ruang_sesi", "ruang"],
+    "keywords": ["edit ruang", "ubah ruang", "ganti nama ruang", "update ruang"]
+  },
+  {
+    "id": "adm_032",
+    "role": "admin",
+    "category": "ruang_sesi",
+    "question": "Bagaimana cara admin menambah sesi ujian?",
+    "answer": "Untuk tambah sesi ujian: 1) Masuk ke halaman Ruang & Sesi, pilih tab Sesi, 2) Klik tombol 'Tambah' yang akan menampilkan pop-up, 3) Isi nama sesi dan waktu mulai - waktu selesai, 4) Klik tombol 'Tambah'.",
+    "related_sections": ["ruang_sesi", "sesi"],
+    "keywords": ["sesi ujian", "tab sesi", "tambah sesi", "waktu sesi", "waktu mulai", "waktu selesai", "sesi baru"]
+  },
+  {
+    "id": "adm_033",
+    "role": "admin",
+    "category": "ruang_sesi",
+    "question": "Bagaimana cara admin mengedit sesi ujian?",
+    "answer": "Untuk edit sesi ujian: 1) Klik tombol icon edit yang akan menampilkan pop-up untuk mengedit nama sesi dan waktu mulai - waktu selesai, 2) Ubah nama sesi dan waktu mulai - waktu selesai, 3) Klik tombol 'Simpan'.",
+    "related_sections": ["ruang_sesi", "sesi"],
+    "keywords": ["edit sesi", "ubah sesi", "ganti sesi", "update sesi", "waktu sesi"]
+  },
+  {
+    "id": "adm_034",
+    "role": "admin",
+    "category": "kategori",
+    "question": "Bagaimana cara admin menambah kategori tugas akhir?",
+    "answer": "Untuk tambah kategori: 1) Masuk ke halaman Kategori, 2) Klik tombol 'Tambah' yang akan menampilkan pop-up untuk menambahkan kategori, 3) Isi nama kategori, 4) Klik tombol 'Tambah'.",
+    "related_sections": ["kategori", "tambah"],
+    "keywords": ["kategori", "kategori tugas akhir", "tambah kategori", "nama kategori", "kategori baru"]
+  },
+  {
+    "id": "adm_035",
+    "role": "admin",
+    "category": "kategori",
+    "question": "Bagaimana cara admin mengedit kategori tugas akhir?",
+    "answer": "Untuk edit kategori: 1) Klik tombol icon edit yang akan menampilkan pop-up untuk mengedit nama kategori, 2) Ubah nama kategori, 3) Klik tombol 'Simpan'.",
+    "related_sections": ["kategori", "edit"],
+    "keywords": ["edit kategori", "ubah kategori", "ganti kategori", "update kategori"]
+  },
+  {
+    "id": "adm_036",
+    "role": "admin",
+    "category": "tahun_ajaran",
+    "question": "Bagaimana cara admin menambah tahun ajaran?",
+    "answer": "Untuk tambah tahun ajaran: 1) Masuk ke halaman Tahun Ajaran, 2) Klik tombol 'Tambah' yang akan menampilkan pop-up untuk menambahkan tahun ajaran, 3) Isi tahun ajaran, 4) Klik tombol 'Tambah'.",
+    "related_sections": ["tahun_ajaran", "tambah"],
+    "keywords": ["tahun ajaran", "tambah tahun ajaran", "tahun ajaran baru"]
+  },
+  {
+    "id": "adm_037",
+    "role": "admin",
+    "category": "tahun_ajaran",
+    "question": "Bagaimana cara admin mengedit tahun ajaran?",
+    "answer": "Untuk edit tahun ajaran: 1) Klik tombol icon edit yang akan menampilkan pop-up untuk mengedit tahun ajaran, 2) Ubah tahun ajaran, 3) Klik tombol 'Simpan'.",
+    "related_sections": ["tahun_ajaran", "edit"],
+    "keywords": ["edit tahun ajaran", "ubah tahun ajaran", "update tahun ajaran"]
+  }
+]

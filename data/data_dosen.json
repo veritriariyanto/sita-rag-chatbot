@@ -1,0 +1,146 @@
+[
+  {
+    "id": "dsn_001",
+    "role": "dosen",
+    "category": "login",
+    "question": "Bagaimana cara login sebagai dosen?",
+    "answer": "Untuk login sebagai dosen: 1) Pada landing page klik tombol 'Login' pada navbar bagian kanan, 2) Pada halaman login klik 'Dosen', 3) Isi email dan password yang sudah diberikan oleh admin, 4) Setelah login, klik profil nama Anda dan akan muncul pop-up, 5) Klik 'Tugas Akhir' untuk masuk ke dashboard Dosen.",
+    "related_sections": ["login", "akses sistem"],
+    "keywords": ["login dosen", "email dosen", "password dosen", "landing page", "dashboard dosen", "cara login"]
+  },
+  {
+    "id": "dsn_002",
+    "role": "dosen",
+    "category": "dashboard",
+    "question": "Apa saja yang ditampilkan di Dashboard dosen?",
+    "answer": "Dashboard dosen menampilkan: 1) Jumlah Tugas Akhir yang dibimbing, 2) Jumlah Ujian Tugas Akhir yang dijadwalkan, 3) Jumlah permintaan menjadi dosen pembimbing, 4) Chart Progress Bimbingan Mahasiswa, 5) Quick access untuk jadwal ujian tugas akhir hari ini (klik row untuk detail), 6) Quick access untuk menerima respon bimbingan (button untuk lihat keseluruhan permintaan).",
+    "related_sections": ["dashboard", "informasi"],
+    "keywords": ["dashboard dosen", "tugas akhir dibimbing", "ujian dijadwalkan", "permintaan pembimbing", "progress bimbingan", "quick access", "chart"]
+  },
+  {
+    "id": "dsn_003",
+    "role": "dosen",
+    "category": "bimbingan",
+    "question": "Apa saja tab yang ada di halaman Bimbingan dosen?",
+    "answer": "Halaman bimbingan dosen memiliki 2 tab: 1) Tab 'Permintaan' - berisi permintaan dari mahasiswa yang ingin menjadikan dosen sebagai pembimbing, 2) Tab 'Dibimbing' - berisi list mahasiswa yang sudah dibimbing oleh dosen tersebut.",
+    "related_sections": ["bimbingan", "tab"],
+    "keywords": ["tab bimbingan", "permintaan", "dibimbing", "list mahasiswa", "halaman bimbingan"]
+  },
+  {
+    "id": "dsn_004",
+    "role": "dosen",
+    "category": "bimbingan",
+    "question": "Bagaimana cara dosen merespon permintaan bimbingan dari mahasiswa?",
+    "answer": "Untuk merespon permintaan bimbingan: 1) Berada di tab 'Permintaan' yang menampilkan list mahasiswa yang request pembimbing, 2) Klik tombol 'Respon', 3) Pilih 'Terima' atau 'Tolak'. Jika klik 'Tolak', mahasiswa akan mendapat respon ditolak dan akan diplotting dosen pembimbing oleh admin. Jika klik 'Terima', mahasiswa tersebut otomatis masuk ke dalam list pada tab 'Dibimbing'.",
+    "related_sections": ["bimbingan", "permintaan"],
+    "keywords": ["respon permintaan", "terima pembimbing", "tolak pembimbing", "tab permintaan", "plotting admin", "request mahasiswa"]
+  },
+  {
+    "id": "dsn_005",
+    "role": "dosen",
+    "category": "bimbingan",
+    "question": "Bagaimana cara dosen memverifikasi pertemuan bimbingan mahasiswa?",
+    "answer": "Untuk memverifikasi pertemuan bimbingan: 1) Masuk ke tab 'Dibimbing', 2) Klik 'Detail' dari list mahasiswa yang ingin diverifikasi, 3) Pada halaman detail bimbingan klik tombol 'Verifikasi', 4) Pop-up verifikasi bimbingan akan muncul untuk memverifikasi pertemuan bimbingan yang sudah direquest mahasiswa. Dosen juga bisa melihat detail pertemuan sebelumnya dengan klik tombol 'Detail'.",
+    "related_sections": ["bimbingan", "verifikasi"],
+    "keywords": ["verifikasi bimbingan", "pertemuan bimbingan", "detail bimbingan", "tombol verifikasi", "tab dibimbing"]
+  },
+  {
+    "id": "dsn_006",
+    "role": "dosen",
+    "category": "bimbingan",
+    "question": "Bagaimana cara dosen memberi nilai bimbingan?",
+    "answer": "Untuk memberi nilai bimbingan: 1) Klik tombol 'Nilai' pada halaman detail bimbingan, 2) Akan diarahkan ke halaman input nilai bimbingan, 3) Dosen perlu mengisi 4 variabel nilai: Kedisiplinan, Komunikasi, Skill/Pengetahuan, dan Tingkah laku, 4) Bisa memberikan catatan akhir bimbingan, 5) Simpan nilai. CATATAN: Ketika status ujian tugas akhir non-aktif atau sudah ditentukan status kelulusannya tidak lulus, dosen tidak bisa menginput dan mengedit nilai bimbingan.",
+    "related_sections": ["bimbingan", "nilai"],
+    "keywords": ["nilai bimbingan", "kedisiplinan", "komunikasi", "skill", "tingkah laku", "catatan bimbingan", "input nilai", "pengetahuan"]
+  },
+  {
+    "id": "dsn_007",
+    "role": "dosen",
+    "category": "bimbingan",
+    "question": "Bagaimana cara dosen mengedit nilai bimbingan yang sudah diberikan?",
+    "answer": "Untuk mengedit nilai bimbingan: 1) Klik tombol 'Lihat Nilai' (muncul ketika sudah memberi nilai sebelumnya), 2) Akan muncul pop-up Nilai Bimbingan, 3) Pada pop-up klik tombol 'Edit Nilai', 4) Akan diarahkan ke halaman input nilai bimbingan untuk melakukan perubahan.",
+    "related_sections": ["bimbingan", "nilai"],
+    "keywords": ["edit nilai bimbingan", "ubah nilai", "lihat nilai", "pop-up nilai", "revisi nilai"]
+  },
+  {
+    "id": "dsn_008",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Apa yang ditampilkan di halaman Ujian Tugas Akhir dosen?",
+    "answer": "Halaman Ujian Tugas Akhir menampilkan list ujian tugas akhir yang sudah berlalu, hari ini, dan akan datang. Pada halaman ini dosen bisa melihat detail salah satu jadwal ujian tugas akhir yang dipilih dan memberinya nilai.",
+    "related_sections": ["ujian", "overview"],
+    "keywords": ["ujian tugas akhir", "list ujian", "jadwal ujian", "detail jadwal", "halaman ujian"]
+  },
+  {
+    "id": "dsn_009",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Bagaimana cara melihat detail jadwal ujian tugas akhir?",
+    "answer": "Untuk melihat detail jadwal: 1) Klik tombol 'Detail' pada list ujian tugas akhir. Halaman detail menampilkan: 1) Nama dosen penguji beserta jabatannya, 2) Detail jadwal berupa hari & tanggal, sesi, dan ruang, 3) Informasi tentang tugas akhir yang akan diuji beserta preview naskah tugas akhir yang bisa didownload.",
+    "related_sections": ["ujian", "detail"],
+    "keywords": ["detail jadwal", "dosen penguji", "jabatan", "naskah tugas akhir", "download naskah", "preview naskah", "detail ujian"]
+  },
+  {
+    "id": "dsn_010",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Bagaimana cara dosen memberi nilai ujian tugas akhir?",
+    "answer": "Untuk memberi nilai ujian: 1) Klik tombol 'Input Nilai' pada halaman detail jadwal ujian, 2) Dosen harus mengisi 4 variabel nilai: Kualitas tata laporan tugas akhir, Kemampuan teknis, Kualitas produk yang dihasilkan, dan Presentasi dan question handling, 3) Isi Catatan revisi, 4) Untuk dosen pembimbing (sekretaris) juga harus memilih Status kelulusan, 5) Klik 'Simpan Nilai'.",
+    "related_sections": ["ujian", "nilai"],
+    "keywords": ["nilai ujian", "input nilai ujian", "catatan revisi", "kualitas laporan", "kemampuan teknis", "presentasi", "question handling", "produk"]
+  },
+  {
+    "id": "dsn_011",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Apa yang terjadi jika dosen penguji memilih status 'Lulus Tanpa Revisi'?",
+    "answer": "Jika status 'Lulus Tanpa Revisi' dipilih (hanya untuk dosen sekretaris): Input Nilai Ujian menjadi required dan input Catatan Revisi menjadi tidak bisa diisi. Ketika submit status ini, catatan revisi dosen penguji yang lain otomatis hilang.",
+    "related_sections": ["ujian", "status kelulusan"],
+    "keywords": ["lulus tanpa revisi", "status kelulusan", "dosen sekretaris", "catatan hilang", "nilai required"]
+  },
+  {
+    "id": "dsn_012",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Apa yang terjadi jika dosen penguji memilih status 'Lulus dengan Revisi'?",
+    "answer": "Jika status 'Lulus dengan Revisi' dipilih (hanya untuk dosen sekretaris): Input Nilai Ujian dan Catatan Revisi menjadi required. Dosen harus mengisi kedua field tersebut sebelum submit.",
+    "related_sections": ["ujian", "status kelulusan"],
+    "keywords": ["lulus dengan revisi", "lulus revisi", "status kelulusan", "dosen sekretaris", "catatan required"]
+  },
+  {
+    "id": "dsn_013",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Apa yang terjadi jika dosen penguji memilih status 'Belum Lulus Perlu Diuji Lagi'?",
+    "answer": "Jika status 'Belum Lulus Perlu Diuji Lagi' dipilih (hanya untuk dosen sekretaris): Input Nilai Ujian menjadi tidak bisa diisi dan ke 4 variabel nilainya otomatis terisi 0. Catatan Revisi menjadi Required. Ketika submit status ini, semua nilai dari dosen penguji lain juga otomatis menjadi 0. Form edit nilai otomatis dinonaktifkan dan tidak bisa dirubah. CATATAN: Ketika ujian tugas akhir sebelumnya mendapat status ini, opsi 'belum lulus perlu diuji lagi' menjadi disable karena batas kesempatan ujian ulang hanya satu kali.",
+    "related_sections": ["ujian", "status kelulusan"],
+    "keywords": ["belum lulus", "ujian ulang", "diuji lagi", "nilai 0", "dosen sekretaris", "form dinonaktifkan", "satu kali ulang"]
+  },
+  {
+    "id": "dsn_014",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Apa yang terjadi jika dosen penguji memilih status 'Tidak Lulus'?",
+    "answer": "Jika status 'Tidak Lulus' dipilih (hanya untuk dosen sekretaris): Input Nilai Ujian dan Catatan Revisi menjadi tidak bisa diisi dan ke 4 variabel nilainya otomatis terisi 50. Form edit nilai otomatis dinonaktifkan dan tidak bisa dirubah.",
+    "related_sections": ["ujian", "status kelulusan"],
+    "keywords": ["tidak lulus", "status kelulusan", "nilai 50", "dosen sekretaris", "form dinonaktifkan"]
+  },
+  {
+    "id": "dsn_015",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Bagaimana cara melihat nilai ujian yang sudah diberikan?",
+    "answer": "Setelah submit nilai ujian tugas akhir, tombol 'Input Nilai' akan berubah menjadi 'Lihat Nilai'. Klik tombol tersebut dan akan muncul pop-up yang menampilkan nilai ujian yang sudah diberikan.",
+    "related_sections": ["ujian", "nilai"],
+    "keywords": ["lihat nilai ujian", "pop-up nilai", "review nilai", "cek nilai"]
+  },
+  {
+    "id": "dsn_016",
+    "role": "dosen",
+    "category": "ujian",
+    "question": "Siapa yang bisa mengatur izin edit nilai ujian?",
+    "answer": "Yang bisa mengatur izin edit nilai hanyalah Dosen Sekretaris dari ujian tugas akhir tersebut. Default dari toggle edit nilai adalah dibuka. Jika toggle dibuka, semua dosen penguji bisa mengedit nilai. Jika toggle ditutup, semua dosen penguji tidak bisa menilai dan harus menghubungi sekretaris untuk membukanya.",
+    "related_sections": ["ujian", "izin edit"],
+    "keywords": ["edit nilai ujian", "izin edit", "dosen sekretaris", "toggle edit", "ubah nilai", "sekretaris"]
+  }
+]
