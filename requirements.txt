@@ -1,11 +1,11 @@
-google-generativeai
-chromadb
-sentence-transformers
-langchain
-langchain-core
-langchain-community
-pypdf
-python-dotenv
-pydantic
-fastapi
-uvicorn[standard]
+# Python 3.11/3.12 (3.15 belum didukung torch/numpy)
+# Opsional, torch CPU (lebih kecil): pip install torch --index-url https://download.pytorch.org/whl/cpu
+google-genai==2.34.0
+chromadb==1.5.9
+langchain-core==1.7.6
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.3
+sentence-transformers==6.2.0
+python-dotenv==1.2.4
+fastapi==0.162.0
+uvicorn[standard]==0.54.0

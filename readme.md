@@ -17,7 +17,7 @@ API berbasis RAG (Retrieval-Augmented Generation) untuk Sistem Informasi Tugas A
 
 ## ✨ Fitur
 
-- 🤖 **RAG dengan Gemini 2.0 Flash** - Menggunakan Google Gemini untuk generate jawaban
+- 🤖 **RAG dengan Gemini Flash** - Menggunakan Google Gemini untuk generate jawaban
 - 🔍 **Vector Search** - ChromaDB untuk semantic search
 - 👥 **Multi-Role Support** - Support Mahasiswa, Dosen, dan Admin
 - 🎯 **Role-Based Filtering** - Filter pencarian berdasarkan role
@@ -27,15 +27,15 @@ API berbasis RAG (Retrieval-Augmented Generation) untuk Sistem Informasi Tugas A
 
 ## 🛠️ Teknologi
 
-- **LLM**: Google Gemini 2.0 Flash
+- **LLM**: Google Gemini (default `gemini-flash-latest`, bisa diganti via env `GEMINI_MODEL`)
 - **Embedding**: Sentence Transformers (paraphrase-multilingual-MiniLM-L12-v2)
 - **Vector Database**: ChromaDB
 - **Framework**: FastAPI
-- **Language**: Python 3.10+
+- **Language**: Python 3.11–3.12
 
 ## 📦 Persyaratan
 
-- Python 3.10 atau lebih tinggi
+- Python 3.11 atau 3.12 (3.13+ belum tentu didukung torch/numpy)
 - Google API Key (Gemini)
 - 4GB RAM minimum
 - 2GB disk space untuk model embeddings
@@ -84,7 +84,7 @@ Edit file `app/config.py` untuk mengubah konfigurasi:
 ```python
 class Settings:
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    GEMINI_MODEL = "gemini-2.0-flash"
+    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     VECTOR_DB_PATH = "./chroma_db"
     
@@ -93,7 +93,7 @@ class Settings:
     DATA_PATH_DOSEN = "data/data_dosen.json"
     DATA_PATH_ADMIN = "data/data_admin.json"
     
-    TOP_K_RESULTS = 5  # Jumlah dokumen yang diambil untuk context
+    TOP_K_RESULTS = 3  # Jumlah dokumen yang diambil untuk context
 ```
 
 ## 📁 Struktur Project
@@ -147,7 +147,7 @@ Mengecek status aplikasi dan vector database.
 ```json
 {
   "status": "healthy",
-  "model": "gemini-2.0-flash",
+  "model": "gemini-flash-latest",
   "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "vector_db_status": "loaded",
   "data_format": "SITA Q&A JSON (Per Role)",

@@ -1,17 +1,16 @@
 import os
 import json
-import google.generativeai as genai
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.schema import Document
+from google import genai
+from langchain_chroma import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.documents import Document
 from app.config import settings
 
-# Configure Gemini
-genai.configure(api_key=settings.GOOGLE_API_KEY)
+ROLES = {"mahasiswa": "Mahasiswa", "dosen": "Dosen", "admin": "Admin"}
 
 class RAGService:
     def __init__(self):
-        self.model = genai.GenerativeModel(settings.GEMINI_MODEL)
+        self.client = genai.Client(api_key=settings.GOOGLE_API_KEY)
         self.embeddings = HuggingFaceEmbeddings(
             model_name=settings.EMBEDDING_MODEL,
             model_kwargs={'device': 'cpu'}
@@ -156,7 +155,8 @@ class RAGService:
         # 1. Retrieve relevant documents
         search_kwargs = {"k": settings.TOP_K_RESULTS}
         
-        # Add role filter if specified
+        # Add role filter if specified (case-insensitive; metadata stores "Mahasiswa"/"Dosen"/"Admin")
+        role_filter = ROLES.get((role_filter or "").strip().lower())
         if role_filter:
             search_kwargs["filter"] = {"role": role_filter}
         
@@ -218,7 +218,10 @@ Berikan jawaban yang:
 4. Dalam Bahasa Indonesia yang mudah dipahami"""
         
         # 4. Generate answer
-        response = self.model.generate_content(prompt)
+        response = self.client.models.generate_content(
+            model=settings.GEMINI_MODEL,
+            contents=prompt
+        )
         
         # Calculate confidence
         confidence = "high" if len(docs) >= 3 else "medium" if len(docs) >= 2 else "low"

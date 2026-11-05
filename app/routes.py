@@ -25,7 +25,7 @@ class AnswerResponse(BaseModel):
     total_sources: int
 
 @router.post("/ask", response_model=AnswerResponse)
-async def ask_question(request: QuestionRequest):
+def ask_question(request: QuestionRequest):
     """
     Answer question with optional role filtering
     
@@ -42,6 +42,6 @@ async def ask_question(request: QuestionRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/health")
-async def health_check():
+def health_check():
     """Health check endpoint"""
     return rag_service.check_health()
