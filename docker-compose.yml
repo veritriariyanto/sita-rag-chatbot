@@ -1,0 +1,9 @@
+# Di server: siapkan .env (GOOGLE_API_KEY, opsional GEMINI_MODELS), lalu
+#   docker compose pull && docker compose up -d
+services:
+  sita-rag:
+    image: ghcr.io/veritriariyanto/sita-rag-chatbot:latest
+    env_file: .env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
