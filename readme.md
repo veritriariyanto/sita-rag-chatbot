@@ -27,7 +27,7 @@ API berbasis RAG (Retrieval-Augmented Generation) untuk Sistem Informasi Tugas A
 
 ## 🛠️ Teknologi
 
-- **LLM**: Google Gemini (default `gemini-flash-latest`, bisa diganti via env `GEMINI_MODEL`)
+- **LLM**: Google Gemini (default `gemini-3.5-flash-lite`, fallback otomatis ke model berikutnya saat 503/429; atur via env `GEMINI_MODELS`)
 - **Embedding**: Sentence Transformers (paraphrase-multilingual-MiniLM-L12-v2)
 - **Vector Database**: ChromaDB
 - **Framework**: FastAPI
@@ -84,7 +84,7 @@ Edit file `app/config.py` untuk mengubah konfigurasi:
 ```python
 class Settings:
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+    GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-flash-lite-latest"]  # dari env GEMINI_MODELS
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     VECTOR_DB_PATH = "./chroma_db"
     

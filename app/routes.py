@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import Optional
+from google.genai import errors
 from app.rag_service import RAGService
 
 router = APIRouter()
@@ -38,6 +39,9 @@ def ask_question(request: QuestionRequest):
             role_filter=request.role
         )
         return result
+    except errors.APIError as e:
+        # Teruskan status Gemini (mis. 503 overload, 429 quota) agar client bisa retry
+        raise HTTPException(status_code=e.code or 502, detail=e.message or str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 

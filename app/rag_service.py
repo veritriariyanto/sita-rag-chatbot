@@ -1,6 +1,7 @@
 import os
 import json
 from google import genai
+from google.genai import types, errors
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
@@ -10,7 +11,17 @@ ROLES = {"mahasiswa": "Mahasiswa", "dosen": "Dosen", "admin": "Admin"}
 
 class RAGService:
     def __init__(self):
-        self.client = genai.Client(api_key=settings.GOOGLE_API_KEY)
+        # Retry otomatis (backoff eksponensial) untuk 429/5xx, mis. 503 "high demand"
+        self.client = genai.Client(
+            api_key=settings.GOOGLE_API_KEY,
+            http_options=types.HttpOptions(
+                # Ada model cadangan -> jangan retry, langsung fallback (lebih cepat)
+                retry_options=types.HttpRetryOptions(
+                    attempts=1 if len(settings.GEMINI_MODELS) > 1 else 3,
+                    initial_delay=1, max_delay=8
+                )
+            )
+        )
         self.embeddings = HuggingFaceEmbeddings(
             model_name=settings.EMBEDDING_MODEL,
             model_kwargs={'device': 'cpu'}
@@ -218,10 +229,7 @@ Berikan jawaban yang:
 4. Dalam Bahasa Indonesia yang mudah dipahami"""
         
         # 4. Generate answer
-        response = self.client.models.generate_content(
-            model=settings.GEMINI_MODEL,
-            contents=prompt
-        )
+        response = self._generate(prompt)
         
         # Calculate confidence
         confidence = "high" if len(docs) >= 3 else "medium" if len(docs) >= 2 else "low"
@@ -245,6 +253,16 @@ Berikan jawaban yang:
             'total_sources': len(docs)
         }
     
+    def _generate(self, prompt: str):
+        """Coba tiap model di GEMINI_MODELS; pindah ke berikutnya jika overload/quota"""
+        for i, model in enumerate(settings.GEMINI_MODELS):
+            try:
+                return self.client.models.generate_content(model=model, contents=prompt)
+            except errors.APIError as e:
+                if e.code not in (429, 503) or i == len(settings.GEMINI_MODELS) - 1:
+                    raise
+                print(f"⚠️ {model} error {e.code}, fallback ke model berikutnya")
+
     def check_health(self):
         """Check service health"""
         return {

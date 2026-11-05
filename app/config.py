@@ -5,7 +5,14 @@ load_dotenv()
 
 class Settings:
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-    GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-flash-latest")
+    # Urutan fallback, dipisah koma: model berikutnya dipakai kalau sebelumnya 503/429
+    # GEMINI_MODEL (lama, satu model) tetap didukung: ditaruh paling depan
+    GEMINI_MODELS = [m.strip() for m in ",".join(filter(None, [
+        os.getenv("GEMINI_MODEL"),
+        os.getenv("GEMINI_MODELS", "gemini-3.5-flash-lite,gemini-3.5-flash,gemini-flash-lite-latest"),
+    ])).split(",") if m.strip()]
+    GEMINI_MODELS = list(dict.fromkeys(GEMINI_MODELS))  # buang duplikat, urutan tetap
+    GEMINI_MODEL = GEMINI_MODELS[0]
     EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
     VECTOR_DB_PATH = "./chroma_db"
     
